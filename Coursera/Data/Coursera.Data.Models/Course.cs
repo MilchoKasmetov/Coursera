@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Coursera.Data.Common.Models;
+using System;
 using System.Collections.Generic;
 
 namespace Coursera.Data.Models;
 
-public partial class Course
+public partial class Course : BaseDeletableModel<int>
 {
     public int Id { get; set; }
 

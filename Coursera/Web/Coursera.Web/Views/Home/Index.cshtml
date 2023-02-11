@@ -1,4 +1,6 @@
 ﻿@using Coursera.Common
+@using Coursera.Web.ViewModels.Students
+@model ICollection<StudentViewModel>
 @{
     this.ViewData["Title"] = "Home Page";
 }
@@ -7,3 +9,53 @@
     <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>Student</th>
+        <th>Total Credit</th>
+        <th>Course Name</th>
+        <th>Course Time</th>
+        <th>Course Credit</th>
+        <th>Course Instructor</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.TotalCreadits</td>
+
+        </tr>
+
+        <tr>
+            @foreach (var item2 in item.Courses)
+           {
+                <td>@item2.Name</td>
+                <td>@item2.Time</td>
+                <td>@item2.Credit</td>
+                <td>@item2.InstructorFullName</td>
+            }
+        </tr>
+
+    }
+
+</table>

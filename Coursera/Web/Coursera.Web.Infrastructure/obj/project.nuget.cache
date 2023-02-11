@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9ncPBZP/wy4ZKxWInQ2743nau3qzM5IlRbqi9sNOjHDfl5nUxJ90wi9o1LulR91ToeMwGMKnySZxene+ShyMcg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Web\\Coursera.Web.Infrastructure\\Coursera.Web.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Milcho\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\Milcho\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

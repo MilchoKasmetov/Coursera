@@ -1,0 +1,17 @@
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Models.deps.json
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Models.runtimeconfig.json
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Models.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Models.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Common.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\bin\Debug\net6.0\Coursera.Data.Common.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.csproj.AssemblyReference.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.AssemblyInfo.cs
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.csproj.CopyComplete
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\refint\Coursera.Data.Models.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\Coursera.Data.Models.genruntimeconfig.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Data\Coursera.Data.Models\obj\Debug\net6.0\ref\Coursera.Data.Models.dll

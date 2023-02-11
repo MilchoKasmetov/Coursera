@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Coursera.Data.Common.Models;
+using System;
 using System.Collections.Generic;
 
 namespace Coursera.Data.Models;
 
-public partial class StudentsCoursesXref
+public partial class StudentsCoursesXref : BaseDeletableModel<int>
 {
     public string StudentPin { get; set; }
 

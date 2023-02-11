@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1kfmAvzQlQhnv9x9ITHQPFuQ65l1nRGCJB0Mm/lrtUgoSbiSklWXnO1X5bzCEaomxWwZzEUQbpdi/QuGPu+r+g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Mapping\\Coursera.Services.Mapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Milcho\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Milcho\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Milcho\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\Milcho\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}

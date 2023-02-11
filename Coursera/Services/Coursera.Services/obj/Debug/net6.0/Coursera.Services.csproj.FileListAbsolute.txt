@@ -1,0 +1,12 @@
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\bin\Debug\net6.0\Coursera.Services.deps.json
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\bin\Debug\net6.0\Coursera.Services.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\bin\Debug\net6.0\Coursera.Services.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.csproj.AssemblyReference.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.AssemblyInfoInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.AssemblyInfo.cs
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.csproj.CoreCompileInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\refint\Coursera.Services.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\Coursera.Services.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services\obj\Debug\net6.0\ref\Coursera.Services.dll

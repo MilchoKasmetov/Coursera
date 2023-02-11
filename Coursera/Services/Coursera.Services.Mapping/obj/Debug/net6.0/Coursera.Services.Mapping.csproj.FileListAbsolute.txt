@@ -1,0 +1,12 @@
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\bin\Debug\net6.0\Coursera.Services.Mapping.deps.json
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\bin\Debug\net6.0\Coursera.Services.Mapping.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\bin\Debug\net6.0\Coursera.Services.Mapping.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.csproj.AssemblyReference.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.AssemblyInfo.cs
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\refint\Coursera.Services.Mapping.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\Coursera.Services.Mapping.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Mapping\obj\Debug\net6.0\ref\Coursera.Services.Mapping.dll

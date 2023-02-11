@@ -1,16 +1,25 @@
 ﻿namespace Coursera.Web.Controllers
 {
     using System.Diagnostics;
-
+    using System.Threading.Tasks;
+    using Coursera.Services.Data;
     using Coursera.Web.ViewModels;
-
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
     {
-        public IActionResult Index()
+        private readonly IStudentService studentService;
+
+        public HomeController(IStudentService studentService)
         {
-            return this.View();
+            this.studentService = studentService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var model = await this.studentService.ShowAllStudents();
+
+            return this.View(model);
         }
 
         public IActionResult Privacy()

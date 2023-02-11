@@ -1,14 +1,7 @@
-﻿@using Coursera.Common
-@using Coursera.Web.ViewModels.Students
-@model ICollection<StudentViewModel>
-@{
-    this.ViewData["Title"] = "Home Page";
-}
+﻿@using Coursera.Web.ViewModels.Students
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@model ICollection<StudentViewModel>
+
 
 <style>
     table {
@@ -30,12 +23,12 @@
 
 <table>
     <tr>
-        <th>Student</th>
-        <th>Total Credit</th>
-        <th>Course Name</th>
-        <th>Course Time</th>
-        <th>Course Credit</th>
-        <th>Course Instructor</th>
+        <th>student</th>
+        <th>total credit</th>
+        <th>course name</th>
+        <th>course time</th>
+        <th>course credit</th>
+        <th>course instructor</th>
     </tr>
 
     @foreach (var item in Model)

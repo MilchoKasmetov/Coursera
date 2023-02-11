@@ -19,3 +19,8 @@ C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Da
 C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\obj\Debug\net6.0\refint\Coursera.Services.Data.dll
 C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\obj\Debug\net6.0\Coursera.Services.Data.pdb
 C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\obj\Debug\net6.0\ref\Coursera.Services.Data.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\bin\Debug\net6.0\appsettings.json
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\bin\Debug\net6.0\Coursera.Common.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\bin\Debug\net6.0\Coursera.Data.dll
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\bin\Debug\net6.0\Coursera.Data.pdb
+C:\Users\Milcho\OneDrive\Desktop\Coursera\Coursera\Services\Coursera.Services.Data\bin\Debug\net6.0\Coursera.Common.pdb

@@ -1,4 +1,5 @@
-﻿using Coursera.Data.Common.Repositories;
+﻿using Coursera.Data;
+using Coursera.Data.Common.Repositories;
 using Coursera.Data.Models;
 using Coursera.Web.ViewModels.Courses;
 using Coursera.Web.ViewModels.Students;
@@ -13,9 +14,9 @@ namespace Coursera.Services.Data
 {
     public class StudentService : IStudentService
     {
-        private readonly IDeletableEntityRepository<Student> studentRepository;
+        private readonly ApplicationDbContext studentRepository;
 
-        public StudentService(IDeletableEntityRepository<Student> studentRepository)
+        public StudentService(ApplicationDbContext studentRepository)
         {
             this.studentRepository = studentRepository;
         }
@@ -24,23 +25,24 @@ namespace Coursera.Services.Data
 
         public async Task<ICollection<StudentViewModel>> ShowAllStudents()
         {
-            return await this.studentRepository
-                .All()
+            var students = await this.studentRepository.StudentsCoursesXrefs.Include(x=>x.StudentPinNavigation.StudentsCoursesXrefs).Include(x=>x.Course).Include(x=>x.Course.Instructor).ToListAsync();
+
+            return students
                 .Select(x => new StudentViewModel()
                 {
-                    FullName = $"{x.FirstName} {x.LastName}",
-                    Courses = x.StudentsCoursesXrefs
-                    .Select(c => c.Course)
+                    FullName = $"{x.StudentPinNavigation.FirstName} {x.StudentPinNavigation.LastName}",
+                    Courses = students.Select(r => r)
                     .ToList()
                     .Select(n => new CoursesViewModel()
-                    {   Name = n.Name,
-                        Credit = n.Credit,
-                        Time = n.TotalTime,
-                        InstructorFullName =$"{n.Instructor.FirstName} {n.Instructor.LastName}",
+                    {
+                        Name = n.Course.Name,
+                        Credit = n.Course.Credit,
+                        Time = n.Course.TotalTime,
+                        InstructorFullName = $"{n.Course.Instructor.FirstName} {n.Course.Instructor.LastName}",
                     })
                     .ToList(),
                 })
-                .ToListAsync();
+                .ToList();
         }
     }
 }

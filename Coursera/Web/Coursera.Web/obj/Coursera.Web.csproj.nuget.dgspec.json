@@ -346,6 +346,9 @@
               "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data.Models\\Coursera.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data.Models\\Coursera.Data.Models.csproj"
               },
+              "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data\\Coursera.Data.csproj": {
+                "projectPath": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data\\Coursera.Data.csproj"
+              },
               "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Mapping\\Coursera.Services.Mapping.csproj": {
                 "projectPath": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Mapping\\Coursera.Services.Mapping.csproj"
               },
@@ -801,6 +804,16 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

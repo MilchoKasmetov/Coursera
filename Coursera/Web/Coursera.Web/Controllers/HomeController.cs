@@ -22,6 +22,12 @@
             return this.View(model);
         }
 
+        //public  IActionResult Index()
+        //{
+
+        //    return this.View();
+        //}
+
         public IActionResult Privacy()
         {
             return this.View();

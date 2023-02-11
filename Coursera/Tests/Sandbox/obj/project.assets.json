@@ -1594,6 +1594,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Coursera.Data": "1.0.0",
           "Coursera.Data.Common": "1.0.0",
           "Coursera.Data.Models": "1.0.0",
           "Coursera.Services.Mapping": "1.0.0",

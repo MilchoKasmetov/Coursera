@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Coursera.Data.Models;
 
-public partial class Course : BaseDeletableModel<int>
+public partial class Course 
 {
     public int Id { get; set; }
 

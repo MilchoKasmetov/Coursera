@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Coursera.Data.Models;
 
-public partial class Student : BaseDeletableModel<string>
+public partial class Student 
 {
     public string Pin { get; set; }
 

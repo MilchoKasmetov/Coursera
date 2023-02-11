@@ -1,0 +1,13 @@
+{
+  "Coursera.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Coursera.Common",
+  "Coursera.Data.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data.Common",
+  "Coursera.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data",
+  "Coursera.Data.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Data\\Coursera.Data.Models",
+  "Coursera.Services.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Data",
+  "Coursera.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services",
+  "Coursera.Services.Mapping, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Mapping",
+  "Coursera.Services.Messaging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Services\\Coursera.Services.Messaging",
+  "Coursera.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Web\\Coursera.Web",
+  "Coursera.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Web\\Coursera.Web.Infrastructure",
+  "Coursera.Web.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Milcho\\OneDrive\\Desktop\\Coursera\\Coursera\\Web\\Coursera.Web.ViewModels"
+}

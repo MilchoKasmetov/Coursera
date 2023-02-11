@@ -39,15 +39,21 @@
 
         </tr>
 
-        <tr>
+       
             @foreach (var item2 in item.Courses)
            {
+            <tr>
+                <td> </td>
+                <td> </td>
                 <td>@item2.Name</td>
                 <td>@item2.Time</td>
                 <td>@item2.Credit</td>
                 <td>@item2.InstructorFullName</td>
+
+               </tr>
+               
             }
-        </tr>
+       
 
     }
 

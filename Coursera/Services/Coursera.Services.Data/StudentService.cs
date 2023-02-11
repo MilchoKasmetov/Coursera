@@ -25,14 +25,18 @@ namespace Coursera.Services.Data
 
         public async Task<ICollection<StudentViewModel>> ShowAllStudents()
         {
-            var students = await this.studentRepository.StudentsCoursesXrefs.Include(x=>x.StudentPinNavigation.StudentsCoursesXrefs).Include(x=>x.Course).Include(x=>x.Course.Instructor).ToListAsync();
-
+            var students = await this.studentRepository
+                .Students
+                .Include(x => x.StudentsCoursesXrefs)
+                .ThenInclude(y => y.Course)
+                .ThenInclude(r => r.Instructor)
+                .ToListAsync();
+          
             return students
                 .Select(x => new StudentViewModel()
                 {
-                    FullName = $"{x.StudentPinNavigation.FirstName} {x.StudentPinNavigation.LastName}",
-                    Courses = students.Select(r => r)
-                    .ToList()
+                    FullName = $"{x.FirstName} {x.LastName}",
+                    Courses = x.StudentsCoursesXrefs
                     .Select(n => new CoursesViewModel()
                     {
                         Name = n.Course.Name,

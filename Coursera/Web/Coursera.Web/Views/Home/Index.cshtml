@@ -27,9 +27,16 @@
                 <label asp-for="@Model.EndDate" class="form-label">EndDate</label>
                 <input asp-for="@Model.EndDate" class="form-control" aria-required="true" />
                 <span asp-validation-for="EndDate" class="text-danger"></span>
+
+
+                <select asp-for="@Model.OutputFormat" asp-items="Html.GetEnumSelectList<OutputFormat>()">
+                    <option selected="selected" value="">Please select</option>
+                </select>
+                <span asp-validation-for="@Model.OutputFormat" class="text-danger" />
+
             </div>
             <div class="mb-3">
-                <input id="btnSubmit" class="btn btn-primary" type="submit" value="Index" />
+                <input id="btnSubmit" class="btn btn-primary" type="submit" value="Export" />
             </div>
         </form>
     </div>

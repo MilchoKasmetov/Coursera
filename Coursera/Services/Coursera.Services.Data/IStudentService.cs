@@ -9,7 +9,7 @@ namespace Coursera.Services.Data
 {
     public interface IStudentService
     {
-            Task<ICollection<StudentViewModel>> ShowAllStudents();
+            Task<ICollection<StudentViewModel>> ShowAllStudents(SearchStudentInputModel input);
 
     }
 }

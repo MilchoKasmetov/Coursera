@@ -23,16 +23,24 @@ namespace Coursera.Services.Data
 
 
 
-        public async Task<ICollection<StudentViewModel>> ShowAllStudents()
+        public async Task<ICollection<StudentViewModel>> ShowAllStudents(SearchStudentInputModel input)
         {
+           
             var students = await this.studentRepository
-                .Students
-                .Include(x => x.StudentsCoursesXrefs)
-                .ThenInclude(y => y.Course)
-                .ThenInclude(r => r.Instructor)
-                .ToListAsync();
-          
-            return students
+                            .Students
+                            .Include(x => x.StudentsCoursesXrefs)
+                            .ThenInclude(y => y.Course)
+                            .ThenInclude(r => r.Instructor)
+                            .Where(x => x.StudentsCoursesXrefs.Any(p => p.CompletionDate.Value >= input.StartDate && p.CompletionDate.Value <= input.EndDate))
+                            .ToListAsync();
+
+            if (input.PINs != null)
+            {
+                var checkPINs = input.PINs.Split(",").ToList();
+                students = students.Where(x => checkPINs.Contains(x.Pin)).ToList();
+            }
+
+            var studentsCourse = students
                 .Select(x => new StudentViewModel()
                 {
                     FullName = $"{x.FirstName} {x.LastName}",
@@ -44,9 +52,12 @@ namespace Coursera.Services.Data
                         Time = n.Course.TotalTime,
                         InstructorFullName = $"{n.Course.Instructor.FirstName} {n.Course.Instructor.LastName}",
                     })
+                    .Where(s => s.Credit >= input.MinCredit)
                     .ToList(),
                 })
                 .ToList();
+
+            return studentsCourse;
         }
     }
 }

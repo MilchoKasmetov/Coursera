@@ -10,10 +10,12 @@
     public class HomeController : BaseController
     {
         private readonly IStudentService studentService;
+        private readonly IExporter csvExporter;
 
-        public HomeController(IStudentService studentService)
+        public HomeController(IStudentService studentService,CSVExporter csvExporter)
         {
             this.studentService = studentService;
+            this.csvExporter = csvExporter;
         }
 
         public IActionResult Index()
@@ -24,11 +26,31 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(SearchStudentInputModel inputModel)
+        public async Task<IActionResult> Index(SearchStudentInputModel input)
         {
-            var model = await this.studentService.ShowAllStudents();
+            if (!this.ModelState.IsValid)
+            {
+                return this.View();
+            }
 
-            return this.View(model);
+            var model = await this.studentService.ShowAllStudents(input);
+
+            if (input.OutputFormat == OutputFormat.Csv)
+            {
+                this.csvExporter.Export(model);
+            }
+            else if (input.OutputFormat == OutputFormat.Html)
+            {
+
+            }
+            else
+            {
+
+            }
+
+
+
+             return this.RedirectToAction("Index", "Home");
         }
 
         //public  IActionResult Index()

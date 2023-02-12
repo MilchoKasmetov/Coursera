@@ -1,0 +1,60 @@
+﻿@using Coursera.Web.ViewModels.Students
+
+@model ICollection<StudentViewModel>
+
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table>
+    <tr>
+        <th>student</th>
+        <th>total credit</th>
+        <th>course name</th>
+        <th>course time</th>
+        <th>course credit</th>
+        <th>course instructor</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FullName</td>
+            <td>@item.TotalCreadits</td>
+
+        </tr>
+
+       
+            @foreach (var item2 in item.Courses)
+           {
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>@item2.Name</td>
+                <td>@item2.Time</td>
+                <td>@item2.Credit</td>
+                <td>@item2.InstructorFullName</td>
+
+               </tr>
+               
+            }
+       
+
+    }
+
+</table>

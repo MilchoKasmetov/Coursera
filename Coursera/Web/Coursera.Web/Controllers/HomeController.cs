@@ -37,7 +37,7 @@
 
             if (input.OutputFormat == OutputFormat.Csv)
             {
-                this.csvExporter.Export(model);
+                this.csvExporter.Export(model, input.DirectoryPath);
             }
             else if (input.OutputFormat == OutputFormat.Html)
             {

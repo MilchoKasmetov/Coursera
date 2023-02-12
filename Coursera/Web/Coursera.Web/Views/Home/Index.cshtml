@@ -29,10 +29,17 @@
                 <span asp-validation-for="EndDate" class="text-danger"></span>
 
 
+                <label asp-for="@Model.DirectoryPath" class="form-label">DirectoryPath</label>
+                <input asp-for="@Model.DirectoryPath" class="form-control" aria-required="true" />
+                <span asp-validation-for="DirectoryPath" class="text-danger"></span>
+
+
                 <select asp-for="@Model.OutputFormat" asp-items="Html.GetEnumSelectList<OutputFormat>()">
                     <option selected="selected" value="">Please select</option>
                 </select>
                 <span asp-validation-for="@Model.OutputFormat" class="text-danger" />
+
+
 
             </div>
             <div class="mb-3">

@@ -13,7 +13,7 @@
         private readonly IExporter csvExporter;
         private readonly IExporter htmlExporter;
 
-        public HomeController(IStudentService studentService,CSVExporter csvExporter, HTMLExporter htmlExporter)
+        public HomeController(IStudentService studentService,CSVExporterService csvExporter, HTMLExporterService htmlExporter)
         {
             this.studentService = studentService;
             this.csvExporter = csvExporter;

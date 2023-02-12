@@ -66,8 +66,9 @@
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IStudentService, StudentService>();
-            services.AddTransient<CSVExporter, CSVExporter>();
-            services.AddTransient<HTMLExporter, HTMLExporter>();
+            services.AddTransient<CSVExporterService, CSVExporterService>();
+            services.AddTransient<HTMLExporterService, HTMLExporterService>();
+            services.AddTransient<IDataTableService, DataTableService>();
         }
 
         private static void Configure(WebApplication app)

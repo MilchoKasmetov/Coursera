@@ -1,60 +1,36 @@
 ﻿@using Coursera.Web.ViewModels.Students
 
-@model ICollection<StudentViewModel>
+@model SearchStudentInputModel
+
+<h1 class="text-white">Search Student/s</h1>
 
 
-<style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
+<div class="row">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+        <form method="post">
+            <div class="mb-3 text-black">
+                <label asp-for="@Model.PINs" class="form-label">PINS</label>
+                <input asp-for="@Model.PINs" class="form-control" aria-required="true" />
+                <span asp-validation-for="PINs" class="text-danger"></span>
+          
+                <label asp-for="@Model.MinCredit" class="form-label">MinCredit</label>
+                <input asp-for="@Model.MinCredit" class="form-control" aria-required="true" />
+                <span asp-validation-for="MinCredit" class="text-danger"></span>
+           
 
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-</style>
-
-<table>
-    <tr>
-        <th>student</th>
-        <th>total credit</th>
-        <th>course name</th>
-        <th>course time</th>
-        <th>course credit</th>
-        <th>course instructor</th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.FullName</td>
-            <td>@item.TotalCreadits</td>
-
-        </tr>
-
-       
-            @foreach (var item2 in item.Courses)
-           {
-            <tr>
-                <td> </td>
-                <td> </td>
-                <td>@item2.Name</td>
-                <td>@item2.Time</td>
-                <td>@item2.Credit</td>
-                <td>@item2.InstructorFullName</td>
-
-               </tr>
-               
-            }
-       
-
-    }
-
-</table>
+           
+                <label asp-for="@Model.StartDate" class="form-label">StartDate</label>
+                <input asp-for="@Model.StartDate" class="form-control" aria-required="true" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+           
+            
+                <label asp-for="@Model.EndDate" class="form-label">EndDate</label>
+                <input asp-for="@Model.EndDate" class="form-control" aria-required="true" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input id="btnSubmit" class="btn btn-primary" type="submit" value="Index" />
+            </div>
+        </form>
+    </div>
+</div>

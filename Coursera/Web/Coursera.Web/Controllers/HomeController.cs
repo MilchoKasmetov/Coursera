@@ -4,6 +4,7 @@
     using System.Threading.Tasks;
     using Coursera.Services.Data;
     using Coursera.Web.ViewModels;
+    using Coursera.Web.ViewModels.Students;
     using Microsoft.AspNetCore.Mvc;
 
     public class HomeController : BaseController
@@ -15,7 +16,15 @@
             this.studentService = studentService;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
+        {
+            var model = new SearchStudentInputModel();
+
+            return this.View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(SearchStudentInputModel inputModel)
         {
             var model = await this.studentService.ShowAllStudents();
 

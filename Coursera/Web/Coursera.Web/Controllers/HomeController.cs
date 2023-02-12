@@ -11,11 +11,13 @@
     {
         private readonly IStudentService studentService;
         private readonly IExporter csvExporter;
+        private readonly IExporter htmlExporter;
 
-        public HomeController(IStudentService studentService,CSVExporter csvExporter)
+        public HomeController(IStudentService studentService,CSVExporter csvExporter, HTMLExporter htmlExporter)
         {
             this.studentService = studentService;
             this.csvExporter = csvExporter;
+            this.htmlExporter = htmlExporter;
         }
 
         public IActionResult Index()
@@ -41,16 +43,17 @@
             }
             else if (input.OutputFormat == OutputFormat.Html)
             {
-
+                this.htmlExporter.Export(model, input.DirectoryPath);
             }
             else
             {
-
+                this.csvExporter.Export(model, input.DirectoryPath);
+                this.htmlExporter.Export(model, input.DirectoryPath);
             }
 
 
 
-             return this.RedirectToAction("Index", "Home");
+            return this.RedirectToAction("Index", "Home");
         }
 
         //public  IActionResult Index()

@@ -67,6 +67,7 @@
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IStudentService, StudentService>();
             services.AddTransient<CSVExporter, CSVExporter>();
+            services.AddTransient<HTMLExporter, HTMLExporter>();
         }
 
         private static void Configure(WebApplication app)

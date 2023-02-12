@@ -5,6 +5,7 @@ namespace Coursera.Web.ViewModels.Students
 {
     public abstract class BaseSearchStudentInputModel
     {
+        
         public string PINs { get; set; }
 
         [Required]
